@@ -5,9 +5,13 @@ export default {
 </script>
 
 <template>
-    <h1>
-        Qui ci sarà l'header
-    </h1>
+    <header>
+        <a href="/" class="brand">
+            <img src="" alt="La Molisana">
+        </a>
+
+
+    </header>
 </template>
 
 <style lang="scss" scoped>
