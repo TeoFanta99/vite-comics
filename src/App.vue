@@ -12,7 +12,9 @@ export default {
 
 <template>
   <AppHeader />
-  <ListProducts />
+  <main>
+    <ListProducts />
+  </main>
 </template>
 
 <style lang="scss">
