@@ -1,0 +1,34 @@
+<script>
+export default {
+    name: "AppHeader",
+}
+</script>
+
+<template>
+    <h1>
+        Qui ci sarà l'header
+    </h1>
+</template>
+
+<style lang="scss" scoped>
+@use './styles/partials/variables' as *;
+@use './styles/general.scss' as *;
+
+header {
+    text-align: center;
+
+    ul {
+        list-style: none;
+        margin: 2.5rem 1rem 4rem;
+        @include center ();
+
+        li a {
+            display: inline-block;
+            padding: 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+    }
+}
+</style>
