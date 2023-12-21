@@ -1,11 +1,13 @@
 <script >
 import AppHeader from './components/AppHeader.vue'
 import ListProducts from './components/ListProducts.vue'
+import AppFooter from './components/AppFooter.vue'
 
 export default {
   components: {
     AppHeader,
-    ListProducts
+    ListProducts,
+    AppFooter
   }
 }
 </script>
@@ -15,6 +17,9 @@ export default {
   <main>
     <ListProducts />
   </main>
+  <footer>
+    <AppFooter />
+  </footer>
 </template>
 
 <style lang="scss">
