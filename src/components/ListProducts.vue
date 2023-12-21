@@ -5,10 +5,19 @@ export default {
 </script>
 
 <template>
-    <h2>Ciao sono il Main</h2>
+    <section class="products">
+        <h2> Content goes here </h2>
+    </section>
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/partials/variables' as *;
-@use '../styles/partials/mixins' as *;
+.products {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-image: url("../assets/img/footer-bg.jpg");
+
+    h1 {
+        font-weight: 600;
+    }
+}
 </style>
