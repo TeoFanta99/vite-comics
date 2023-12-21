@@ -7,8 +7,24 @@ export default {
 <template>
     <header>
         <a href="/" class="brand">
-            <img src="" alt="La Molisana">
+            <img src="../assets/img/dc-logo.png" alt="Logo DC">
         </a>
+
+        <!-- navigazione menù principale -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="" class="active">
+                        testo
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="">
+                        testo
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
 
     </header>
@@ -20,6 +36,9 @@ export default {
 
 header {
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
 
     ul {
         list-style: none;
@@ -34,7 +53,7 @@ header {
             transition: background 0.3s;
 
             &.active,
-            &.hover {
+            &:hover {
                 background: lighten($primary, 70%);
             }
         }
