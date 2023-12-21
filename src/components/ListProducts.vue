@@ -14,7 +14,7 @@ export default {
 .products {
     padding: 4rem 1rem;
     text-align: center;
-    background-image: url("../assets/img/footer-bg.jpg");
+    background-color: #000;
 
     h1 {
         font-weight: 600;
