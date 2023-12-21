@@ -11,8 +11,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use './styles/partials/variables' as *;
-@use './styles/general.scss' as *;
+@use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
 
 header {
     text-align: center;
@@ -28,6 +28,11 @@ header {
             text-decoration: none;
             font-weight: 600;
             transition: background 0.3s;
+
+            &.active,
+            &.hover {
+                background: lighten($primary, 70%);
+            }
         }
     }
 }
