@@ -1,5 +1,10 @@
 <script>
+import AppFooter from './AppCards.vue'
+
 export default {
+    components: {
+        AppCards
+    },
     name: "ListProducts",
 }
 </script>
@@ -7,6 +12,7 @@ export default {
 <template>
     <section class="products">
         <h2> Content goes here </h2>
+        <AppCards />
     </section>
 </template>
 
