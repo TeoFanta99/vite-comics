@@ -1,7 +1,7 @@
 <script>
 export default {
     props: {
-        cards: Array
+        details: Object
     },
     name: "AppCards",
 }
@@ -9,8 +9,8 @@ export default {
 
 <template>
     <div class="prod-card">
-        <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="img">
-        <h3>Titolo</h3>
+        <img :src="details.thumb" alt="img">
+        <h3>{{ details.series }}</h3>
     </div>
 </template>
 
@@ -23,17 +23,17 @@ export default {
     background-color: white;
     border: 2px solid black;
     display: inline-block;
-    height: auto;
-    width: calc((100% / 5) - 10px);
+    width: calc((100% / 6) - 10px);
     margin: 5px;
 
     h3 {
         color: $primary;
+        font-size: 12px;
     }
 
     img {
         width: 100%;
-        height: auto;
+        height: 80%;
     }
 }
 </style>
