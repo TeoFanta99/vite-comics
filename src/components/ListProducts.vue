@@ -1,5 +1,5 @@
 <script>
-import AppFooter from './AppCards.vue'
+import AppCards from './AppCards.vue'
 
 export default {
     components: {
