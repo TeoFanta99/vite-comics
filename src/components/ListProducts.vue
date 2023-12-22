@@ -91,7 +91,7 @@ export default {
     <section class="products">
         <h2> Content goes here </h2>
         <div class="container">
-            <AppCards />
+            <AppCards v-for="(card, i) in cards" :key="i" :details="card" />
         </div>
 
     </section>
