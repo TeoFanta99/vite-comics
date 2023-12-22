@@ -90,7 +90,10 @@ export default {
 <template>
     <section class="products">
         <h2> Content goes here </h2>
-        <AppCards />
+        <div class="container">
+            <AppCards />
+        </div>
+
     </section>
 </template>
 
@@ -103,5 +106,11 @@ export default {
     h1 {
         font-weight: 600;
     }
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
 }
 </style>
