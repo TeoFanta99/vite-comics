@@ -88,8 +88,10 @@ export default {
 </script>
 
 <template>
+    <div class="jumbo">
+        <img src="../assets/img/jumbotron.jpg" alt="">
+    </div>
     <section class="products">
-        <h2> Content goes here </h2>
         <div class="container">
             <AppCards v-for="(card, i) in cards" :key="i" :details="card" />
         </div>
@@ -98,6 +100,18 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.jumbo {
+    width: 100%;
+    height: 400px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
 .products {
     padding: 4rem 1rem;
     text-align: center;
